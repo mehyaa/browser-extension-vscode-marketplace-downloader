@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "VS Code Marketplace Downloader",
+  "version": "1.0",
+  "description": "Adds a download button to Visual Studio Marketplace extension pages.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://marketplace.visualstudio.com/items?*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
