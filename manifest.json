@@ -3,7 +3,6 @@
   "name": "VS Code Marketplace Downloader",
   "description": "Adds a download button to Visual Studio Marketplace extension pages.",
   "version": "1.0.0",
-  "incognito": "allowed",
   "homepage_url": "https://github.com/mehyaa/browser-extension-vscode-marketplace-downloader",
   "content_scripts": [
     {
