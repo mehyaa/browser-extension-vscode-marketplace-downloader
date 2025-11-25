@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "VS Code Marketplace Downloader",
-  "description": "Adds a download button to Visual Studio Marketplace extension pages.",
+  "description": "Adds a download button to Visual Studio Code Marketplace extension pages.",
   "version": "1.0.0",
   "homepage_url": "https://github.com/mehyaa/browser-extension-vscode-marketplace-downloader",
   "content_scripts": [
@@ -28,6 +28,16 @@
       "48": "icons/icon-48.png",
       "64": "icons/icon-64.png",
       "128": "icons/icon-128.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@mehyaa.vscode-marketplace-downloader",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   }
 }

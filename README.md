@@ -1,4 +1,5 @@
 # VS Code Marketplace Downloader
+[![Chrome Users](https://img.shields.io/chrome-web-store/users/hfdpikfannfpibndlihjglbjmklhicgf?style=for-the-badge&logo=googlechrome&label=Chrome%20Users)](https://chromewebstore.google.com/detail/hfdpikfannfpibndlihjglbjmklhicgf) [![Mozilla Add-on Users](https://img.shields.io/amo/users/vscode-marketplace-downloader?style=for-the-badge&logo=firefoxbrowser&label=Firefox%20Users)](https://addons.mozilla.org/en-US/firefox/addon/vscode-marketplace-downloader)
 
 A browser extension that enhances the Visual Studio Code Marketplace by adding a direct **Download** button for VSIX files.
 
@@ -11,13 +12,19 @@ A browser extension that enhances the Visual Studio Code Marketplace by adding a
 
 ## Installation
 
-1. Clone this repository.
-2. Open your browser's extension management page:
-   - **Chrome/Edge**: `chrome://extensions`
-   - **Firefox**: `about:debugging#/runtime/this-firefox`
-3. Enable **Developer Mode**.
-4. Click **Load unpacked** (or "Load Temporary Add-on" in Firefox).
-5. Select the folder containing `manifest.json`.
+Download the extension or clone this repository, then follow the instructions below:
+
+### Chrome / Edge / Opera / Brave
+1. Open your browser's extensions page (e.g., `chrome://extensions/`).
+2. Enable **Developer mode**.
+3. Click **Load unpacked**.
+4. Select the directory containing the extension files.
+
+### Firefox
+1. Open `about:debugging`.
+2. Click **This Firefox**.
+3. Click **Load Temporary Add-on...**.
+4. Select the `manifest.json` file.
 
 ## Usage
 
@@ -25,8 +32,6 @@ A browser extension that enhances the Visual Studio Code Marketplace by adding a
 2. You will see a new **Download** button next to the standard Install button.
 3. Click it to download the `.vsix` file directly to your machine.
 
-## Files
+## License
 
-- `manifest.json`: The extension manifest file.
-- `content.js`: The content script that injects the button and handles the download logic.
-- `icon.png`: The extension icon.
+[MIT](LICENSE)
