@@ -168,7 +168,7 @@
     }
 
     function injectButton() {
-        const installButton = document.querySelector('a.ux-button.install');
+        const installButton = document.querySelector('a.ux-button.install, button.ux-button.install');
 
         if (!installButton) return;
 
@@ -186,12 +186,27 @@
     }
 
     function init() {
-        injectButton();
+        setTimeout(injectButton, 150);
 
         // Observe the body for changes to handle dynamic content loading (SPA navigation, re-renders)
         const observer = new MutationObserver(injectButton);
 
         observer.observe(document.body, { childList: true, subtree: true });
+
+        let intervalCount = 0;
+
+        const interval = setInterval(() =>
+        {
+            if (intervalCount >= 5) {
+                clearInterval(interval);
+
+                return;
+            }
+
+            intervalCount++;
+
+            injectButton();
+        }, 1000);
     }
 
     // Run init when page is ready
